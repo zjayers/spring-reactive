@@ -19,7 +19,7 @@ class FluxAndMonoControllerTest {
     @Test
     void returnIntegerFluxStream() {
         var responseBody = webTestClient.get()
-                                        .uri("/reactive")
+                                        .uri("/reactive/flux")
                                         .accept(MediaType.APPLICATION_JSON)
                                         .exchange()
                                         .expectStatus()
